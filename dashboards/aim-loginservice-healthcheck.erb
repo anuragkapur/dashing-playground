@@ -1,0 +1,22 @@
+<script type='text/javascript'>
+  $(function myFunction() {
+    $('li').live('click', function(e){
+      var widget = $(this).find('.widget');
+      var url = widget.data('url');
+      // window.location = url;
+      window.open(url, '_blank', "width=900, height=900, scrollbars=yes, toolbar=yes, resizable=yes");
+    });
+  });
+</script>
+
+<% content_for :title do %>Login App Healthcheck Dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" onClick="myFunction()">
+      <div data-id="login-service-eu-prod.herokuapp.com" data-view="Healthcheck" data-title="login-service-eu" data-url="https://login-service-eu-prod.herokuapp.com/login/__gtg" data-bind-style="status" style="style"></div>
+    </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" onClick="myFunction()">
+          <div data-id="login-service-us-prod.herokuapp.com" data-view="Healthcheck" data-title="login-service-us" data-url="https://login-service-us-prod.herokuapp.com/login/__gtg" data-bind-style="status" style="style"></div>
+      </li>
+  </ul>
+</div>

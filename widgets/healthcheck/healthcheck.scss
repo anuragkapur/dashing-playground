@@ -1,0 +1,39 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #47bbb3;
+$red: #e3394f;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-number styles
+// ----------------------------------------------------------------------------
+.widget-healthcheck {
+
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+  }
+
+  .healthy {
+    background-color: #86d751;
+    color: white;
+  }
+
+  .unhealthy {
+    background-color: #e3394f;
+    color: white;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}

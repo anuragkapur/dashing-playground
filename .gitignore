@@ -1,2 +1,6 @@
+.idea/
+*.iml
+*.lock
+
 *DS_STORE
 history.yml
